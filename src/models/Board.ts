@@ -2,7 +2,7 @@ import { Cell } from "./Cell";
 import { Colors } from "./Colors";
 
 export class Board {
-  cells: Cell[][] = []
+  cells: Cell[][] = [];
 
   public initCells() {
     for (let i = 0; i < 8; i++) {
@@ -14,7 +14,7 @@ export class Board {
           row.push(new Cell(this, j, i, Colors.WHITE, null)); // Белые ячейки
         }
       }
-      this.cells.push(row)
+      this.cells.push(row);
     }
   }
 }
